@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Slideshow</title>
+    <style>
+        h1 { text-align:center; }
+        div { width:550px; margin:0 auto; }
+    </style>
+
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(function() {
+            $("#gallery").gallery({
+                slideshow_transition_effect: 'Mosaic,Wipe_from_horizontal_blind,Wipe_from_vertical_blind,Wipe_from_vertical_center,Wipe_from_horizontal_center,Wipe_to_horizontal_center,Wipe_to_vertical_center,Wipe_from_bottom_to_top,Wipe_from_top_to_bottom,Wipe_from_right_to_left',
+                slideshow_time_interval: '4000',
+                slideshow_window_width: '400',
+                slideshow_window_height: '300',
+                slideshow_background_color: '#FFF',
+                slideshow_border: '#999 solid 2px',
+                text_effect: 'text_fade'
+            });
+        });
+    </script> 
+</head>
+    
+<body>
+<h1>image slideshow</h1>
+<div id="gallery">
+        <ul>
+            <li>
+                <a href="#"><img src="images/slideshow_large_1.jpg" alt="1"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_2.jpg" alt="2"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_3.jpg" alt="3"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_4.jpg" alt="4"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_1.jpg" alt="5"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_2.jpg" alt="6"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_3.jpg" alt="7"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_4.jpg" alt="8"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_1.jpg" alt="9"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/slideshow_large_2.jpg" alt="10"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
